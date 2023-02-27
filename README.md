@@ -42,6 +42,11 @@ This project was completed in 6 days during week 4 of the Turing program.
 - [Noah](https://www.linkedin.com/in/noah-byers-a067b8260/)
 - [Trey](https://www.linkedin.com/in/trey-marshall-32ab01260/)
 
+### Project Demonstration
+
+![Idea Box](https://user-images.githubusercontent.com/109426263/221681367-71a18998-6a12-4945-8f4e-26184df0278d.gif)
+
+
 ### Wins + Challenges:
 
 #### Wins
