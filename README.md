@@ -12,8 +12,6 @@ Throughout the project, one of our focuses will be on providing a fluid and resp
 * Incorporate & iterate over arrays in order to filter what is being displayed
 * Craft code with clean style, using small functions that show trends toward DRYness and SRP
 
-The project spec & rubric can be found [here](https://frontend.turing.io/projects/module-1/ideabox-group.html)
-
 ## LinkedIn Pages
 - [Dustin](https://www.linkedin.com/in/dustin-gouner/)
 - [Chris](https://www.linkedin.com/in/chris-cole-5559b684/)
@@ -52,6 +50,6 @@ This project was completed in 6 days during week 4 of the Turing program.
 - We successfully navigated working collaboratively with multiple people's schedules by remaining flexible and adaptable.
 
 #### Challenges:
-- We originally had a tough time getting the the display to update along with the data model. We ened up using "hidden" as filter with ".add" and ".remove"
+- We originally had a tough time getting the display to update along with the data model. We ended up using "hidden" as filter with ".add" and ".remove"
 - Another challenge was figuring out how to set up the filtering system. We originally had to repeat the innerHTML, but created a new function to simplfy it. 
 
