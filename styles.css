@@ -5,11 +5,13 @@ html, body {
     width: 100vw;
     margin: 0;  
 }
+
 main {
     display: flex;
     flex-direction: column;
     width: 75vw;  
 }
+
 header {
     display: flex;
     flex-direction: column;
@@ -71,23 +73,26 @@ form {
 .title-text {
     font-size: 20px;
     font-weight: bold;
-    height: 10%;
+    height: 60%;
     width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin: 2px;
 }
 
 .title-input {
-    height: 40%;
+    height: 50%;
     border: 1px solid #353567;
 }
 
- .body-container {
+label {
+    margin-bottom: 5px;
+}
+
+.body-container {
     font-size: 20px;
     font-weight: bold;
-    height: 45%;
+    height: 50%;
     width: 35%;
     display: flex;
     flex-direction: column;
@@ -104,7 +109,7 @@ form {
     margin: 5px;
 }
 
- .save-btn, .search-image-box {
+.save-btn, .search-image-box {
     height: 60%;
     width: 100%;
     border: 1px solid #353567;
@@ -118,7 +123,7 @@ form {
 }
 
 .body-container {
-    height: 55%;
+    height: 50%;
 } 
 
 .body-input {
@@ -143,7 +148,6 @@ form {
     width: 75%;
 }
 
-
 .search-img-container {
     display: flex;
     flex-direction: row;
@@ -156,6 +160,7 @@ form {
     justify-content: center;
     flex-wrap: wrap;
     background-color: #EAEAF4;
+    overflow: scroll;
 }
 
 .idea-card {
@@ -164,7 +169,14 @@ form {
     border: 1px solid #353567;
     height: 45%;
     width: 25%;
-    margin: 16px 16px 16px 16px;
+    margin: 10px 10px 10px 10px;
+}
+
+p {
+    color: #1F1F3D;
+    height: 30%;
+    overflow-wrap: break-word;
+
 }
 
 .top-bar {
@@ -185,6 +197,7 @@ form {
     height: 80%;
     display: flex;
     flex-direction: column;
+    margin-left: 5px;
 }
 
 .bottom-bar {

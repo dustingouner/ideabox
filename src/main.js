@@ -13,6 +13,7 @@ var showAllIdeasBtn = document.querySelector(".show-all-ideas-btn")
 var showStarredIdeasBtn = document.querySelector(".starred-ideas-btn")
 var ideaCard = document.querySelector(".idea-card")
 var filterBox = document.getElementById("filter-box")
+
 //====================================================
 // Variables
 //====================================================
@@ -26,26 +27,18 @@ var showFavorite = false
 //====================================================
 
 window.addEventListener('load', pageLoad)
-
 savedButton.addEventListener('click', function(event){
   event.preventDefault()
   saveCard()
   clearInput()
   disableSaveButton()
 })
-
 form.addEventListener('keyup', toggleSaveBtn)
-
 deleteButton.addEventListener('click', deleteIdeaCard)
-
 ideaContainer.addEventListener('click', updateCard)
-
 starButton.addEventListener('click', toggleStar)
-
 showAllIdeasBtn.addEventListener('click', showAllIdeas)
-
 showStarredIdeasBtn.addEventListener('click', showFavorites)
-
 filterBox.addEventListener('input', createCard)
 
 //====================================================
@@ -56,7 +49,7 @@ function pageLoad() {
   disableSaveButton()
 }
 
-function createCard(){
+function createCard() {
   ideaContainer.innerHTML = ''
   for (var i = 0; i < savedIdeas.length; i++ ) {
     if (savedIdeas[i].title.toLowerCase().includes(filterBox.value.toLowerCase()) || savedIdeas[i].body.toLowerCase().includes(filterBox.value.toLowerCase())) {
@@ -70,12 +63,12 @@ function createCard(){
 }
 
 function drawSingleCard(idea) {
-    var star ='star.svg' 
-    var altStar = 'White star'
-    if (idea.star) {
-      star = 'star-active.svg'
-      altStar = 'Orange star'
-    }
+  var star ='star.svg' 
+  var altStar = 'White star'
+  if (idea.star) {
+    star = 'star-active.svg'
+    altStar = 'Orange star'
+  }
   ideaContainer.innerHTML += 
   `<section class="idea-card" id=${idea.id}>
     <section class="top-bar">
@@ -87,13 +80,11 @@ function drawSingleCard(idea) {
       <p>${idea.body}</p>
     </section>
     <section class="bottom-bar">
-      <img class="comment-img" src="assets/comment.svg" alt="comment-img">
-      <h4>Comment</h4>
     </section>
   </section>`
 }
 
-function saveCard(){
+function saveCard() {
   currentIdea = new Idea(titleInput.value, bodyInput.value)
   savedIdeas.push(currentIdea)
   createCard()
@@ -118,7 +109,7 @@ function toggleSaveBtn() {
 
 function deleteIdeaCard(event) {
   for (var i = 0; i < savedIdeas.length; i++) {
-  if(parseInt(event.target.id) === savedIdeas[i].id) {
+  if (parseInt(event.target.id) === savedIdeas[i].id) {
     savedIdeas.splice(i, 1)
     }
   }
@@ -126,10 +117,10 @@ function deleteIdeaCard(event) {
 }
 
 function updateCard(event) {
-  if(event.target.classList.contains('delete-x')) {
+  if (event.target.classList.contains('delete-x')) {
     deleteIdeaCard(event)
   }
-  if(event.target.classList.contains('star')) {
+  if (event.target.classList.contains('star')) {
     toggleStar(event)
   }
 }
