@@ -36,11 +36,6 @@ Simply use this [Deployable Link](https://sleepyisawak3.github.io/ideabox/)
 
 This project was completed in 6 days during week 4 of the Turing program.
 
-### LinkedIn Pages
-- [Dustin](https://www.linkedin.com/in/dustin-gouner/)
-- [Chris](https://www.linkedin.com/in/chris-cole-5559b684/)
-- [Noah](https://www.linkedin.com/in/noah-byers-a067b8260/)
-- [Trey](https://www.linkedin.com/in/trey-marshall-32ab01260/)
 
 ### Project Demonstration
 
